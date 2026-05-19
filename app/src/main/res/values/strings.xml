@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Recipe Book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="countries_array">
+        <item>Egypt</item>
+        <item>Saudi Arabia</item>
+        <item>United Arab Emirates</item>
+        <item>Jordan</item>
+        <item>Lebanon</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+        <item>Oman</item>
+        <item>Bahrain</item>
+        <item>Iraq</item>
+        <item>Syria</item>
+        <item>Palestine</item>
+        <item>Yemen</item>
+        <item>Libya</item>
+        <item>Tunisia</item>
+        <item>Algeria</item>
+        <item>Morocco</item>
+        <item>Sudan</item>
+    </string-array>
+</resources>
