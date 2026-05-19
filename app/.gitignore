@@ -1,1 +1,39 @@
-/build
+# 1. ملفات ومجلدات البناء (تم منعها لعدم تضخيم حجم المستودع)
+build/
+.gradle/
+captures/
+output.json
+
+# 2. ملفات إعدادات بيئة التطوير (Android Studio / IntelliJ)
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/navEditor.xml
+.idea/deploymentTargetSelector.xml
+
+# 3. ملفات الخصائص المحلية والمفاتيح السرية (حساسة جداً ولا تُرفع أبداً)
+local.properties
+*.keystore
+*.jks
+*.p12
+google-services.json
+
+# 4. الحزم والملفات النهائية المستخرجة (تُرفع للمتجر وليس للجيت)
+*.apk
+*.aar
+*.aab
+
+# 5. ملفات أنظمة التشغيل المؤقتة
+.DS_Store
+Thumbs.db
+*.bak
+*.log
+
+# 6. ملفات تتبع الأخطاء وفحص الأداء
+🛡️_crashlytics/
+.navigation/
