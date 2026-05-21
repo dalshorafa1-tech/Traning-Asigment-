@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- السطر الأساسي لضمان التجاوب Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق كتاب الوصفات - Recipe Book</title>
+    <style>
+        :root { 
+            --primary: #ff6b6b; 
+            --dark: #2d3436; 
+            --light: #f9f9f9; 
+            --accent: #00b894;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; padding: 20px; font-size: 16px; }
+        
+        /* حاوية متجاوبة رئيسية للموقع */
+        .container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 900px; margin: 40px auto; text-align: center; }
+        
+        h1 { color: var(--primary); margin-bottom: 20px; font-size: 2.2rem; }
+        
+        /* قسم وصف المشروع المطور */
+        .description-box { text-align: right; background: #fffcfc; padding: 25px; border-right: 5px solid var(--primary); border-radius: 4px; margin-bottom: 35px; }
+        .description-box h2 { font-size: 1.4rem; margin-bottom: 10px; color: var(--dark); }
+        .description-box p { color: #4a4a4a; font-size: 1.1rem; text-align: justify; }
+        
+        /* شبكة عرض الصور المتجاوبة (Responsive Grid) */
+        .screenshot-heading { margin-bottom: 20px; font-size: 1.4rem; color: var(--dark); text-align: right; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .gallery-item { background: #fff; border: 1px solid #eee; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; object-fit: cover; }
+        
+        /* زر تحميل وتصفح متجاوب */
+        .download-btn { display: inline-block; background-color: var(--primary); color: white; padding: 15px 40px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 30px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 5px 15px rgba(255,107,107,0.3); margin-bottom: 20px; }
+        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255,107,107,0.5); }
+        
+        .footer-text { margin-top: 20px; font-size: 0.95rem; color: #b2bec3; border-top: 1px solid #eee; padding-top: 20px; }
+
+        /* تعديلات شاشات الموبايل (Media Queries) لضمان أعلى مرونة وتجاوب */
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; margin: 10px auto; }
+            h1 { font-size: 1.7rem; }
+            .description-box { padding: 15px; }
+            .description-box p { font-size: 1rem; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } /* عرض صورتين بجانب بعض في الشاشات الصغيرة جداً */
+            .download-btn { width: 100%; padding: 12px 20px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍳 تطبيق كتاب الوصفات (Recipe Book)</h1>
+        
+        <!-- قسم وصف المشروع والتطبيق -->
+        <div class="description-box">
+            <h2>📝 وصف المشروع (App Description)</h2>
+            <p>تطبيق أندرويد متكامل يعتمد على بيئة العمل والتقنيات الحديثة (Java & Firebase) يتيح للمستخدمين مشاركة واكتشاف وحفظ وصفات الطبخ في بيئة تفاعلية مميزة تشبه منصات التواصل الاجتماعي. يمكن للمستخدمين تسجيل الدخول وإنشاء حسابات بشكل آمن، ومن ثم نشر وصفاتهم الخاصة مدعومة بالصور والخطوات التفصيلية مع توفير واجهة بحث ذكية لتصفح الأطباق حسب الاسم أو التصنيف، بالإضافة لملف شخصي لكل مستخدم يعرض إنجازاته ومساهماته البرمجية.</p>
+        </div>
+
+        <!-- قسم معرض لقطات الشاشة المتجاوب (All 4 Screenshots) -->
+        <h2 class="screenshot-heading">📸 لقطات شاشة من التطبيق (Screenshots)</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="im/1.jpeg" alt="واجهة التطبيق 1">
+            </div>
+            <div class="gallery-item">
+                <img src="im/2.jpeg" alt="واجهة التطبيق 2">
+            </div>
+            <div class="gallery-item">
+                <img src="im/3.jpeg" alt="واجهة التطبيق 3">
+            </div>
+            <div class="gallery-item">
+                <img src="im/4.jpeg" alt="واجهة التطبيق 4">
+            </div>
+        </div>
+        
+        <!-- زر التحميل أو التصفح المباشر -->
+        <a href="https://github.com" target="_blank" class="download-btn">تصفح المستودع البرمجي على GitHub</a>
+        
+        <!-- التوثيق والاسم للكلية -->
+        <div class="footer-text">
+            طُوِّر بواسطة الطالبة: <strong>ديمة رائد سلامة الشرفا</strong> | الرقم الجامعي: 220235232 <br>
+            <strong>الكلية الجامعية للعلوم التطبيقية</strong> - مشروع التدريب البرمجي وإدارة النسخ
+        </div>
+    </div>
+
+</body>
+</html>
