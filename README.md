@@ -20,11 +20,11 @@
 ## 📸 لقطات من التطبيق (Screenshots)
 <table align="center">
   <tr>
-    <td><img src="images/1.jpeg" width="200" alt="Screenshot 1"></td>
-    <td><img src="images/2.jpeg" width="200" alt="Screenshot 2"></td>
-    <td><img src="images/3.jpeg" width="200" alt="Screenshot 3"></td>
-    <td><img src="images/4.jpeg" width="200" alt="Screenshot 4"></td>
-    <td><img src="images/5.jpeg" width="200" alt="Screenshot 5"></td>
+    <td><img src="images/Add Recipe Screen.jpeg" width="200" alt="Screenshot 1"></td>
+    <td><img src="images/Home Screen.jpeg" width="200" alt="Screenshot 2"></td>
+    <td><img src="images/Profile Screen.jpeg" width="200" alt="Screenshot 3"></td>
+    <td><img src="images/Recipe Details Screen.jpeg" width="200" alt="Screenshot 4"></td>
+    <td><img src="images/Profile Screen.jpeg" width="200" alt="Screenshot 5"></td>
   </tr>
 </table>
 
